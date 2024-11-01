@@ -1,4 +1,3 @@
-import 'package:expenses_tracker/Widgets/expenses.dart';
 import 'package:flutter/material.dart';
 import 'package:expenses_tracker/Models/temp_expense.dart';
 
@@ -12,8 +11,8 @@ class ExpenseItem extends StatelessWidget {
     return Card(
       child: Padding(
         padding: const EdgeInsets.symmetric(
-          horizontal: 10,
-          vertical: 20,
+          horizontal: 20,
+          vertical: 10,
         ),
         child: Column(
           children: [

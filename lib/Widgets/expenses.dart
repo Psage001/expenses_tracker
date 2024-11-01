@@ -49,11 +49,11 @@ class _ExpensesState extends State<Expenses> {
     setState(() {
       _registeredExpenses.remove(expense);
     });
-    ScaffoldMessenger.of( context).clearSnackBars();
+    ScaffoldMessenger.of(context).clearSnackBars();
     ScaffoldMessenger.of(context).showSnackBar(
        SnackBar(
-        duration: Duration(seconds: 3),
-        content: Text('Expense Deleted'),
+        duration: const Duration(seconds: 3),
+        content: const Text('Expense Deleted'),
         action: SnackBarAction(
           label: 'Undo',
           onPressed: () {
@@ -95,7 +95,7 @@ class _ExpensesState extends State<Expenses> {
           ),
         ],
       ),
-      backgroundColor: const Color.fromARGB(240, 230, 255, 240),
+      backgroundColor: const Color.fromARGB(239, 177, 227, 197),
       body: Column(
         children: [
           const Text('The Chart'),

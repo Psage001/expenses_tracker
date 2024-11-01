@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intl/date_time_patterns.dart';
 import 'package:expenses_tracker/Models/temp_expense.dart';
 
 class NewExpense extends StatefulWidget {
