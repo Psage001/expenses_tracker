@@ -1,3 +1,4 @@
+import 'package:expenses_tracker/Widgets/chart/chart.dart';
 import 'package:expenses_tracker/Models/temp_expense.dart';
 import 'package:expenses_tracker/Widgets/new_expense.dart';
 import 'package:flutter/material.dart';
@@ -98,7 +99,7 @@ class _ExpensesState extends State<Expenses> {
       backgroundColor: const Color.fromARGB(239, 177, 227, 197),
       body: Column(
         children: [
-          const Text('The Chart'),
+          Chart(expenses:_registeredExpenses),
           Expanded(
             child: mainContent,
           ), //Expanded expands the list if expanded is not there it will only show the chart text
